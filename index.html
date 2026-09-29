@@ -759,27 +759,16 @@
       pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
     }
 
-    // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBUe45KMpZOHQTvM-4k80T1PO-1IW905CA",
-  authDomain: "tizi-mondino-ventas.firebaseapp.com",
-  projectId: "tizi-mondino-ventas",
-  storageBucket: "tizi-mondino-ventas.firebasestorage.app",
-  messagingSenderId: "863450930081",
-  appId: "1:863450930081:web:e917c182e44850620ac9e0",
-  measurementId: "G-CS3N3PTMPG"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+    // Configuración de Firebase
+    const firebaseConfig = {
+      apiKey: "AIzaSyBUe45KMpZOHQTvM-4k80T1PO-1IW905CA",
+      authDomain: "tizi-mondino-ventas.firebaseapp.com",
+      projectId: "tizi-mondino-ventas",
+      storageBucket: "tizi-mondino-ventas.firebasestorage.app",
+      messagingSenderId: "863450930081",
+      appId: "1:863450930081:web:e917c182e44850620ac9e0",
+      measurementId: "G-CS3N3PTMPG"
+    };
 
     let db = null;
     let analytics = null;
